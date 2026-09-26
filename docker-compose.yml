@@ -1,0 +1,7 @@
+services:
+  camera-analyzer:
+    build: .
+    container_name: camera-analyzer
+    restart: unless-stopped
+    env_file:
+      - .env
